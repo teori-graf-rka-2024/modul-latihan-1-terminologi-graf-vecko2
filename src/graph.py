@@ -12,12 +12,12 @@ def get_degree(G: nx.Graph, node: int) -> int:
     return degrees
 
 # no 3
-def traversal(G: nx.Graph, start: int) -> list[int]:
+def dfs_traversal(G: nx.Graph, start: int) -> list[int]:
     dfs = list(nx.dfs_preorder_nodes(G, source=start))
     return dfs
 
 # no 4
-def traversal(G: nx.Graph, start: int) -> list[int]:
+def bfs_traversal(G: nx.Graph, start: int) -> list[int]:
     bfs = list(nx.bfs_tree(G, source=start))
     return bfs
 
